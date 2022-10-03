@@ -1,0 +1,6 @@
+@import "src/scss/colors";
+
+//Главная тема
+@mixin DefaultTheme {
+  --text-color: #{$text-color}; // основной цвет текста
+}

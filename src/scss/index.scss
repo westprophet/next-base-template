@@ -1,0 +1,31 @@
+@import './theme.scss';
+@import './styles-overrides.scss';
+
+:root {
+  @include DefaultTheme();
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--text-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+  min-height: 0;
+  min-width: 0;
+}
+
+::selection {
+  background: var(--primary-color);
+  color: grey;
+}
+
