@@ -6,7 +6,7 @@ module.exports = {
     'prettier',
     'plugin:promise/recommended',
     'plugin:import/recommended',
-    'plugin:prettier/recommended',
+    'plugin:prettier/recommended'
   ],
   plugins: ['react-hooks', 'prettier'],
   parser: '@typescript-eslint/parser',
@@ -15,12 +15,12 @@ module.exports = {
     'comma-dangle': [
       'error',
       {
-        arrays: 'always-multiline',
+        arrays: 'only-multiline',
         exports: 'always-multiline',
         functions: 'only-multiline',
         imports: 'always-multiline',
-        objects: 'always-multiline',
-      },
+        objects: 'only-multiline'
+      }
     ],
     'promise/catch-or-return': 0,
     'react/react-in-jsx-scope': 'off',
@@ -41,36 +41,36 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 0,
     '@typescript-eslint/ban-ts-comment': 0,
     'import/no-unresolved': 0,
-    'promise/always-return': 0,
+    'promise/always-return': 0
   },
   parserOptions: {
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true,
-    },
+      jsx: true
+    }
   },
   env: {
     es6: true,
     node: true,
-    browser: true,
+    browser: true
   },
   settings: {
     react: {
-      version: 'detect',
-    },
+      version: 'detect'
+    }
   },
   overrides: [
     {
       files: ['**/*.tsx'],
       rules: {
-        'react/prop-types': 'off',
-      },
+        'react/prop-types': 'off'
+      }
     },
     {
       files: ['**/*.js'],
       rules: {
-        '@typescript-eslint/no-var-requires': 'off', // разрешаем в required
-      },
-    },
-  ],
+        '@typescript-eslint/no-var-requires': 'off' // разрешаем в required
+      }
+    }
+  ]
 };
